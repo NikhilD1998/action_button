@@ -1,12 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:action_button/action_button.dart';
 
 void main() {
-  test('adds one to input values', () {
-    final calculator = Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
+  test('ActionState enum has expected values', () {
+    expect(ActionState.values.length, 4);
+    expect(ActionState.idle.toString(), 'ActionState.idle');
+    expect(ActionState.loading.toString(), 'ActionState.loading');
+    expect(ActionState.success.toString(), 'ActionState.success');
+    expect(ActionState.error.toString(), 'ActionState.error');
   });
 }

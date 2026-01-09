@@ -43,7 +43,8 @@ class GradientActionButton extends StatelessWidget {
               ),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.purple.withOpacity(0.18),
+                  // Use withAlpha for compatibility with latest Flutter SDKs
+                  color: Colors.purple.withAlpha((0.18 * 255).toInt()),
                   blurRadius: 10,
                   spreadRadius: 1,
                 ),

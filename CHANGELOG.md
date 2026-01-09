@@ -1,3 +1,7 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+- Initial release.
+- Provides `ActionButton` widget for async actions.
+- Explicit state management: idle, loading, success, error.
+- UI-agnostic builder pattern.
+- Example usage included.

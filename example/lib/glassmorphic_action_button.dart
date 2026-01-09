@@ -16,9 +16,13 @@ class GlassmorphicActionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Use .withAlpha for compatibility with latest Flutter SDKs
     final List<Color> grad =
         gradient ??
-        [Colors.white.withOpacity(0.25), Colors.white.withOpacity(0.05)];
+        [
+          Colors.white.withAlpha((0.25 * 255).toInt()),
+          Colors.white.withAlpha((0.05 * 255).toInt()),
+        ];
 
     return ActionButton(
       onPressed: onPressed,
@@ -39,13 +43,13 @@ class GlassmorphicActionButton extends StatelessWidget {
               ),
               border: Border.all(
                 color: state == ActionState.error
-                    ? Colors.red.withOpacity(0.7)
-                    : Colors.white.withOpacity(0.4),
+                    ? Colors.red.withAlpha((0.7 * 255).toInt())
+                    : Colors.white.withAlpha((0.4 * 255).toInt()),
                 width: 1.2,
               ),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.blue.withOpacity(0.08),
+                  color: Colors.white.withAlpha((0.25 * 255).toInt()),
                   blurRadius: 12,
                   spreadRadius: 1,
                 ),

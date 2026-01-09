@@ -26,8 +26,8 @@ class ExampleScreen extends StatelessWidget {
     final neumorphicColor = Colors.grey[100];
     final neumorphicShadow = Colors.grey[400];
     final glassGradient = [
-      Colors.white.withOpacity(0.25),
-      Colors.white.withOpacity(0.05),
+      Colors.white.withAlpha((0.25 * 255).toInt()),
+      Colors.white.withAlpha((0.05 * 255).toInt()),
     ];
     final gradientIdle = [Colors.blue, Colors.white];
     final gradientSuccess = [Colors.green, Colors.lightGreen];
@@ -92,9 +92,6 @@ class ExampleScreen extends StatelessWidget {
 
 // --- Glassmorphic Button Example ---
 
-
 // --- Gradient Button Example ---
 
-
 // --- State Child Helper ---
-

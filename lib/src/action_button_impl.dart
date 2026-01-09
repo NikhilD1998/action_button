@@ -10,8 +10,11 @@ class ActionButton extends StatefulWidget {
   final Future<void> Function() onPressed;
   final ActionButtonBuilder builder;
 
-  const ActionButton({Key? key, required this.onPressed, required this.builder})
-    : super(key: key);
+  const ActionButton({
+    super.key,
+    required this.onPressed,
+    required this.builder,
+  });
 
   @override
   State<ActionButton> createState() => _ActionButtonState();
