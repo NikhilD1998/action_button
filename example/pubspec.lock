@@ -4,9 +4,10 @@ packages:
   action_button:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      name: action_button
+      sha256: "6d48085787c5644df6cc5983e4008f9ca3e54c7231a729b512d7dd73777c0c83"
+      url: "https://pub.dev"
+    source: hosted
     version: "0.0.1"
   async:
     dependency: transitive

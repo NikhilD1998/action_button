@@ -17,7 +17,7 @@ class ExampleScreen extends StatelessWidget {
 
   Future<void> _fakeAsyncAction() async {
     await Future.delayed(const Duration(seconds: 2));
-    // throw Exception('Fail'); // Uncomment to test error state
+    //throw Exception('Fail'); // Uncomment to test error state
   }
 
   @override
