@@ -2,7 +2,7 @@ name: action_button
 description: >
   A production-ready async action button abstraction for Flutter.
   Standardizes async button state handling (idle, loading, success, error) with a builder pattern.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/NikhilD1998/action_button
 repository: https://github.com/NikhilD1998/action_button
 issue_tracker: https://github.com/NikhilD1998/action_button/issues
